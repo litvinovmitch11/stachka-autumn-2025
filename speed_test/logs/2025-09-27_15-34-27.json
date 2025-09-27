@@ -1,0 +1,47 @@
+{
+  "system_info": {
+    "timestamp": "2025-09-27_15-34-27",
+    "hostname": "mitchell-pc",
+    "cpu": "AMD Ryzen 7 4700U with Radeon Graphics",
+    "memory": "7.2Gi",
+    "os": "Linux",
+    "kernel": "6.14.0-29-generic"
+  },
+  "benchmarks": [
+    {
+        "name": "C++ (GCC)",
+        "binary": "/home/mitchell/dev/stachka-autumn-2025/speed_test/builds/gcc/fib_cpp",
+        "result": "267914296",
+        "execution_time": "0.480386s",
+        "execution_time_seconds": 0.480386,
+        "user_time": 0.47,
+        "system_time": 0.00,
+        "max_rss_kb": 3840,
+        "exit_status": 0
+    }
+,
+    {
+        "name": "Go (GC)",
+        "binary": "/home/mitchell/dev/stachka-autumn-2025/speed_test/builds/gc/fib_gc",
+        "result": "267914296",
+        "execution_time": "1.529200796s",
+        "execution_time_seconds": 1.529200796,
+        "user_time": 1.54,
+        "system_time": 0.00,
+        "max_rss_kb": 1472,
+        "exit_status": 0
+    }
+,
+    {
+        "name": "Go (GCCGO)",
+        "binary": "/home/mitchell/dev/stachka-autumn-2025/speed_test/builds/gccgo/fib_gccgo",
+        "result": "267914296",
+        "execution_time": "533.18459ms",
+        "execution_time_seconds": 0.533185,
+        "user_time": 0.65,
+        "system_time": 0.02,
+        "max_rss_kb": 58836,
+        "exit_status": 0
+    }
+  ]
+}
