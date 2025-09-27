@@ -1,0 +1,229 @@
+[
+    {
+        "name": "simple_cpp",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/size_test/builds/gcc/simple_cpp",
+        "compiler": "gcc",
+        "optimization": "O0",
+        "language": "C++",
+        "complexity": "simple",
+        "size_bytes": 16504,
+        "size_kb": 16,
+        "size_mb": 0,
+        "sections": {
+            "text": 1883,
+            "data": 632,
+            "bss": 280
+        },
+        "dynamic_libs_count": 4,
+        "symbol_count": 37
+    }
+,
+    {
+        "name": "simple_cpp_O3",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/size_test/builds/gcc/simple_cpp_O3",
+        "compiler": "gcc",
+        "optimization": "O3",
+        "language": "C++",
+        "complexity": "simple",
+        "size_bytes": 16384,
+        "size_kb": 16,
+        "size_mb": 0,
+        "sections": {
+            "text": 2248,
+            "data": 648,
+            "bss": 280
+        },
+        "dynamic_libs_count": 4,
+        "symbol_count": 36
+    }
+,
+    {
+        "name": "complex_cpp",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/size_test/builds/gcc/complex_cpp",
+        "compiler": "gcc",
+        "optimization": "O0",
+        "language": "C++",
+        "complexity": "complex",
+        "size_bytes": 77264,
+        "size_kb": 75,
+        "size_mb": 0,
+        "sections": {
+            "text": 32424,
+            "data": 920,
+            "bss": 280
+        },
+        "dynamic_libs_count": 4,
+        "symbol_count": 301
+    }
+,
+    {
+        "name": "complex_cpp_O3",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/size_test/builds/gcc/complex_cpp_O3",
+        "compiler": "gcc",
+        "optimization": "O3",
+        "language": "C++",
+        "complexity": "complex",
+        "size_bytes": 31960,
+        "size_kb": 31,
+        "size_mb": 0,
+        "sections": {
+            "text": 19025,
+            "data": 824,
+            "bss": 280
+        },
+        "dynamic_libs_count": 4,
+        "symbol_count": 71
+    }
+,
+    {
+        "name": "simple_go",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/size_test/builds/gc/simple_go",
+        "compiler": "gc",
+        "optimization": "strip",
+        "language": "Go",
+        "complexity": "simple",
+        "size_bytes": 1175552,
+        "size_kb": 1148,
+        "size_mb": 1,
+        "sections": {
+            "text": 1126865,
+            "data": 38256,
+            "bss": 203912
+        },
+        "dynamic_libs_count": 0,
+        "symbol_count": 0
+    }
+,
+    {
+        "name": "simple_go_default",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/size_test/builds/gc/simple_go_default",
+        "compiler": "gc",
+        "optimization": "default",
+        "language": "Go",
+        "complexity": "simple",
+        "size_bytes": 1806229,
+        "size_kb": 1763,
+        "size_mb": 1,
+        "sections": {
+            "text": 1126833,
+            "data": 38240,
+            "bss": 203912
+        },
+        "dynamic_libs_count": 0,
+        "symbol_count": 1930
+    }
+,
+    {
+        "name": "complex_go",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/size_test/builds/gc/complex_go",
+        "compiler": "gc",
+        "optimization": "strip",
+        "language": "Go",
+        "complexity": "complex",
+        "size_bytes": 1200128,
+        "size_kb": 1172,
+        "size_mb": 1,
+        "sections": {
+            "text": 1149623,
+            "data": 38256,
+            "bss": 203912
+        },
+        "dynamic_libs_count": 0,
+        "symbol_count": 0
+    }
+,
+    {
+        "name": "complex_go_default",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/size_test/builds/gc/complex_go_default",
+        "compiler": "gc",
+        "optimization": "default",
+        "language": "Go",
+        "complexity": "complex",
+        "size_bytes": 1842786,
+        "size_kb": 1799,
+        "size_mb": 1,
+        "sections": {
+            "text": 1149591,
+            "data": 38240,
+            "bss": 203912
+        },
+        "dynamic_libs_count": 0,
+        "symbol_count": 1955
+    }
+,
+    {
+        "name": "simple_gccgo",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/size_test/builds/gccgo/simple_gccgo",
+        "compiler": "gccgo",
+        "optimization": "O0",
+        "language": "Go",
+        "complexity": "simple",
+        "size_bytes": 58672,
+        "size_kb": 57,
+        "size_mb": 0,
+        "sections": {
+            "text": 22020,
+            "data": 1992,
+            "bss": 392
+        },
+        "dynamic_libs_count": 4,
+        "symbol_count": 233
+    }
+,
+    {
+        "name": "simple_gccgo_O3",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/size_test/builds/gccgo/simple_gccgo_O3",
+        "compiler": "gccgo",
+        "optimization": "O3",
+        "language": "Go",
+        "complexity": "simple",
+        "size_bytes": 53488,
+        "size_kb": 52,
+        "size_mb": 0,
+        "sections": {
+            "text": 19603,
+            "data": 1905,
+            "bss": 392
+        },
+        "dynamic_libs_count": 4,
+        "symbol_count": 223
+    }
+,
+    {
+        "name": "complex_gccgo",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/size_test/builds/gccgo/complex_gccgo",
+        "compiler": "gccgo",
+        "optimization": "O0",
+        "language": "Go",
+        "complexity": "complex",
+        "size_bytes": 71280,
+        "size_kb": 69,
+        "size_mb": 0,
+        "sections": {
+            "text": 29240,
+            "data": 5312,
+            "bss": 392
+        },
+        "dynamic_libs_count": 4,
+        "symbol_count": 316
+    }
+,
+    {
+        "name": "complex_gccgo_O3",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/size_test/builds/gccgo/complex_gccgo_O3",
+        "compiler": "gccgo",
+        "optimization": "O3",
+        "language": "Go",
+        "complexity": "complex",
+        "size_bytes": 71080,
+        "size_kb": 69,
+        "size_mb": 0,
+        "sections": {
+            "text": 27309,
+            "data": 5297,
+            "bss": 392
+        },
+        "dynamic_libs_count": 4,
+        "symbol_count": 311
+    }
+]
