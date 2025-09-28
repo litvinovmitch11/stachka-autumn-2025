@@ -1,0 +1,37 @@
+{
+  "system_info": {
+    "timestamp": "2025-09-28_20-02-52",
+    "hostname": "mitchell-pc",
+    "cpu": "AMD Ryzen 7 4700U with Radeon Graphics",
+    "os": "Linux",
+    "kernel": "6.14.0-32-generic"
+  },
+  "build_times": [
+    {
+        "compiler": "C++ (GCC)",
+        "real_time": "0.367s",
+        "user_time": "0.317s", 
+        "sys_time": "0.049s",
+        "iterations": 10,
+        "output_size": 16600
+    }
+,
+    {
+        "compiler": "Go (GC)",
+        "real_time": "0.125s",
+        "user_time": "0.163s", 
+        "sys_time": "0.073s",
+        "iterations": 10,
+        "output_size": 1831814
+    }
+,
+    {
+        "compiler": "Go (GCCGO)",
+        "real_time": "0.243s",
+        "user_time": "0.209s", 
+        "sys_time": "0.033s",
+        "iterations": 10,
+        "output_size": 60272
+    }
+  ]
+}
