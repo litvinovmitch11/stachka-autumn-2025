@@ -1,0 +1,46 @@
+{
+  "system_info": {
+    "timestamp": "2025-09-28_19-28-06",
+    "hostname": "mitchell-pc",
+    "cpu": "AMD Ryzen 7 4700U with Radeon Graphics",
+    "os": "Linux",
+    "kernel": "6.14.0-32-generic"
+  },
+  "analysis": {
+    "escape_analysis": {
+      "summary": "Анализ размещения переменных (Go показывает только escape в кучу)",
+      "results": [
+        {
+          "line": "../src/golang/main.go:16:16: new([100]int) escapes to heap",
+          "type": "escape",
+          "description": "Переменная размещается в куче"
+        }
+,
+        {
+          "line": "../src/golang/main.go:26:5: moved to heap: x",
+          "type": "heap",
+          "description": "Переменная перемещена в кучу"
+        }
+      ]
+    },
+    "detailed_analysis": {
+      "summary": "Детальный анализ причин escape",
+      "results": [
+        {
+          "line": "../src/golang/main.go:16:16: new([100]int) escapes to heap:",
+          "reason": "Создание через new() с возвратом указателя"
+        }
+,
+        {
+          "line": "../src/golang/main.go:26:5: x escapes to heap:",
+          "reason": "Требуется размещение в куче"
+        }
+      ]
+    }
+  },
+  "explanations": {
+    "note": "Go компилятор показывает только переменные, которые убегают в кучу. Переменные в стеке не отображаются.",
+    "heap": "Переменная размещается в куче - требует сборки мусора",
+    "escape": "Переменная убегает из функции и должна быть в куче"
+  }
+}
