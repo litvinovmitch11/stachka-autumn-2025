@@ -1,0 +1,61 @@
+{
+  "system_info": {
+    "timestamp": "2025-09-28_20-10-08",
+    "hostname": "mitchell-pc",
+    "os": "Linux",
+    "kernel": "6.14.0-32-generic"
+  },
+  "binaries": [
+    {
+        "name": "speed_test",
+        "compiler": "gcc",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/dependency_test/builds/gcc/speed_test",
+        "size_bytes": 16600,
+        "size_kb": 16,
+        "file_type": "ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=189f5733f546c7cdc6d3323990ca923abe03415f, for GNU/Linux 3.2.0, not stripped",
+        "linking_type": "dynamic",
+        "dynamic_libs_count": 4,
+        "sections": {
+            "text": 4049,
+            "data": 672,
+            "bss": 280
+        }
+    }
+,
+    {
+        "name": "speed_test",
+        "compiler": "gc",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/dependency_test/builds/gc/speed_test",
+        "size_bytes": 1831806,
+        "size_kb": 1788,
+        "file_type": "ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, Go BuildID=VY59G8e_Q7GFrEnz8vDe/06LmEnHY-YiIOQAUKcOR/epX-zlpUBpPD8AyYTttY/xL6oZM7liGmi0wG-Ww8D, with debug_info, not stripped",
+        "linking_type": "static",
+        "dynamic_libs_count": 0,
+        "sections": {
+            "text": 1142769,
+            "data": 38272,
+            "bss": 204040
+        }
+    }
+,
+    {
+        "name": "speed_test",
+        "compiler": "gccgo",
+        "path": "/home/mitchell/dev/stachka-autumn-2025/dependency_test/builds/gccgo/speed_test",
+        "size_bytes": 60296,
+        "size_kb": 58,
+        "file_type": "ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=cf1f4a41c998bf7810caf77cf34e8bb2dac6e62d, for GNU/Linux 3.2.0, with debug_info, not stripped",
+        "linking_type": "dynamic",
+        "dynamic_libs_count": 4,
+        "sections": {
+            "text": 20889,
+            "data": 2000,
+            "bss": 392
+        }
+    }
+  ],
+  "summary": {
+    "total_binaries_analyzed": 3,
+    "analysis_note": "Сравнение статической и динамической линковки в разных компиляторах"
+  }
+}
