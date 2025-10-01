@@ -67,7 +67,7 @@ done
 echo "      ]" >> "$JSON_LOG"
 echo "    }," >> "$JSON_LOG"
 
-# Детальный анализ с -m -m - ИСПРАВЛЕННАЯ ВЕРСИЯ
+# Детальный анализ с -m -m
 echo "Детальный анализ..."
 DETAILED_OUTPUT=$(go build -gcflags="-m -m" -o "$BUILD_DIR/main_detailed" "$SRC_DIR/golang/main.go" 2>&1)
 
@@ -76,7 +76,7 @@ echo "      \"summary\": \"Детальный анализ причин escape\"
 echo "      \"results\": [" >> "$JSON_LOG"
 
 first_line=true
-# Ищем УНИКАЛЬНЫЕ строки с объяснениями, убираем дубликаты по номеру строки
+# Ищем уникаольные строки с объяснениями, убираем дубликаты по номеру строки
 echo "$DETAILED_OUTPUT" | grep -E "(escapes to heap|moved to heap)" | grep -v "^#" | awk -F: '{print $1":"$2":"$3}' | sort -u | while IFS= read -r line; do
     if [[ -n "$line" ]]; then
         if [[ "$first_line" != true ]]; then
